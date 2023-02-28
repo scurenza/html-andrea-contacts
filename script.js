@@ -17,8 +17,6 @@ function doSomethingWithData() {
     let i = 0;
     while (i < myArray.length) {
 
-    // const element = `<li>${myArray[i].name} ${myArray[i].last_name}, numero di telefono: ${myArray[i].num}</li>`;
-    // ul.innerHTML += element;
     const contact = `
     <div class="contact">
         <h2>${myArray[i].name} ${myArray[i].last_name}</h2>
@@ -33,24 +31,4 @@ function doSomethingWithData() {
 getData(doSomethingWithData); // passa la funzione doSomethingWithData come callback
 
 
-// insertItem();
-// function insertItem () {
-//     myArray.forEach(element => {
-//        contacts.innerHTML += `
-//         <div class="contact">
-//             <h2>${element.name} ${element.last_name}</h2>
-//             <p>${element.num}</p>
-//         </div>
-//        ` 
-//     });
-// }
 
-
-// let ul = document.querySelector('.list'); // crea un elemento ul
-
-// myArray.forEach(function(element) {
-//     let li = document.createElement('li'); // crea un elemento li
-//     li.innerHTML = `${element.name} ${element.last_name}: ${element.num}`; // imposta il contenuto dell'elemento li
-//     ul.appendChild(li); // aggiunge l'elemento li all'elemento ul
-//   });
-  
